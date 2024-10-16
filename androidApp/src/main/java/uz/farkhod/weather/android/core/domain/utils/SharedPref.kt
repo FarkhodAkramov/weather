@@ -14,6 +14,8 @@ object SharedPref {
         editor.putInt("cnt_code", code).commit()
     }
 
+
+
     fun getCountryCode(context: Context): Int {
         val sharedPreferences = context.getSharedPreferences("cnt_code", Context.MODE_PRIVATE)
         return sharedPreferences.getInt("cnt_code", 1)
